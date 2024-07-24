@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> calculator </title>
+</head>
+<body>
+<form>
+<h1> MY CALCULATOR</h1>
+<label> ENTER FIRST NUMBER </lable><br>
+<input type="text"id="num1"  name="first no"> <br><br>
+<label> ENTER SECOND NUMBER </label><br>
+<input type="text id="num2"  name="second no"><br><br>
+<button type=" button onclick="add( )">addition</button>
+<button type=" button onclick="sub( )">substraction</button>
+<button type=" button onclick="mul( )">multiplication</button>
+<button type=" button onclick="div( )">division</button><br><br><br>
+<label>RESULT</label><br>
+<input type="text id="result"><br>
+</form>
+<script>
+function add ( )
+{
+var n1= document.get ElementById ("num1").value;
+var n2= document.get ElementById ("num2").value;
+var sum=parseInt (n1)+parseInt (n2);
+document.get ElementById ("result").value=sum;
+}
+function sub ( )
+var n1= document.get ElementById ("num1").value;
+var n2= document.get ElementById ("num2").value;
+var sub=parseInt (n1)-parseInt (n2);
+document.get ElementById ("result").value=sub;
+}
+function mul ( )
+{
+var n1= document.get ElementById ("num1").value;
+var n2= document.get ElementById ("num2").value;
+var mul=parseInt (n1)*parseInt (n2);
+document.get ElementById ("result").value=mul;
+}
+function div ( )
+{
+var n1=document.get Element ById("num1").value;
+var n2=document.get Element ById("num2").value;
+var div=parsInt(n1)/parseInt(n2);
+document.get Element ById("result").value=div;
+}
+</script>
+</body>
+</html>
